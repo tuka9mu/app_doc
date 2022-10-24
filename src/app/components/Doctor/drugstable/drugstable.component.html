@@ -1,0 +1,176 @@
+<div class="container">
+  <div class="flex justify-between p-5 sm:flex-shrink">
+    <div class="m-3">
+      <form>
+        <input type="date"
+          class="pl-10 pr-3 py-2 rounded-lg border-b-2 border-l-2 border-sky-400 hover:bg-sky-50 outline-none focus:border-blue-500" />
+        <button type="submit"
+          class="mr-6 text-gray-700 border-b-2 border-r-2 border-orange-500 hover:bg-orange-100 focus:ring-4 focus:outline-none focus:ring-yellow-300 font-medium rounded-lg text-sm  px-3 py-2">بحث</button>
+      </form>
+    </div>
+    <div>
+      <button class="mt-2 w-8">
+        <a (click)="toogleDev1()"><img src="../../../assets/img/add.png" /></a>
+      </button>
+    </div>
+  </div>
+
+  <div class="md:flex justify-between sm:flex-row">
+    <div class="w-full overflow-x-auto relative shadow-md sm:rounded-lg m-4">
+      <table class="w-full text-sm text-left text-gray-500">
+        <thead class="text-sm text-white font-bold bg-sky-300">
+          <tr>
+            <th scope="col" class="text-right py-3 px-6">
+              اسم الدواء
+            </th>
+            <th scope="col" class="text-right">
+              الجرعة
+            </th>
+            <th scope="col" class="text-right">
+              التكرار
+            </th>
+            <th scope="col" class="text-right">
+              التوجه
+            </th>
+            <th scope="col" class="text-right">
+              المدة
+            </th>
+            <th scope="col" class="text-center">
+              الاجراء
+            </th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700 text-right">
+            <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap">
+              براسيتول
+            </th>
+            <td class="text-right">
+              1 ملي غرام
+            </td>
+            <td class="text-right">
+              1 اسبوع
+            </td>
+            <td class="text-right">
+              اي شي
+            </td>
+            <td class="text-right">
+              اي شي
+            </td>
+            <td class="flex justify-center">
+              <div class="p-1 mt-1">
+                <button routerLink="doc"
+                  class="bg-yellow-300 hover:bg-yellow-400 focus:bg-yellow-500 text-white rounded-full font-semibold px-2 py-2">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" fill="#ffffff" data-name="Layer 1"
+                    viewBox="0 0 24 24">
+                    <path
+                      d="M3.5,24h15A3.51,3.51,0,0,0,22,20.487V12.95a1,1,0,0,0-2,0v7.537A1.508,1.508,0,0,1,18.5,22H3.5A1.508,1.508,0,0,1,2,20.487V5.513A1.508,1.508,0,0,1,3.5,4H11a1,1,0,0,0,0-2H3.5A3.51,3.51,0,0,0,0,5.513V20.487A3.51,3.51,0,0,0,3.5,24Z" />
+                    <path
+                      d="M9.455,10.544l-.789,3.614a1,1,0,0,0,.271.921,1.038,1.038,0,0,0,.92.269l3.606-.791a1,1,0,0,0,.494-.271l9.114-9.114a3,3,0,0,0,0-4.243,3.07,3.07,0,0,0-4.242,0l-9.1,9.123A1,1,0,0,0,9.455,10.544Zm10.788-8.2a1.022,1.022,0,0,1,1.414,0,1.009,1.009,0,0,1,0,1.413l-.707.707L19.536,3.05Zm-8.9,8.914,6.774-6.791,1.4,1.407-6.777,6.793-1.795.394Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-1 mt-1">
+                <button routerLink="doc"
+                  class="bg-red-500 hover:bg-red-600 focus:bg-red-700 text-white font-semibold rounded-full px-2 py-2 text-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="18" fill="#ffffff" viewBox="0 0 32 32">
+                    <path
+                      d="M24.2,12.193,23.8,24.3a3.988,3.988,0,0,1-4,3.857H12.2a3.988,3.988,0,0,1-4-3.853L7.8,12.193a1,1,0,0,1,2-.066l.4,12.11a2,2,0,0,0,2,1.923h7.6a2,2,0,0,0,2-1.927l.4-12.106a1,1,0,0,1,2,.066Zm1.323-4.029a1,1,0,0,1-1,1H7.478a1,1,0,0,1,0-2h3.1a1.276,1.276,0,0,0,1.273-1.148,2.991,2.991,0,0,1,2.984-2.694h2.33a2.991,2.991,0,0,1,2.984,2.694,1.276,1.276,0,0,0,1.273,1.148h3.1A1,1,0,0,1,25.522,8.164Zm-11.936-1h4.828a3.3,3.3,0,0,1-.255-.944,1,1,0,0,0-.994-.9h-2.33a1,1,0,0,0-.994.9A3.3,3.3,0,0,1,13.586,7.164Zm1.007,15.151V13.8a1,1,0,0,0-2,0v8.519a1,1,0,0,0,2,0Zm4.814,0V13.8a1,1,0,0,0-2,0v8.519a1,1,0,0,0,2,0Z" />
+                  </svg>
+                </button>
+              </div>
+              <div class="p-1 mt-1">
+                <button routerLink="doc"
+                  class="bg-sky-200 hover:bg-sky-300 focus:bg-sky-400 text-white font-semibold rounded-full px-2 py-2 text-xs">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" data-name="Layer 1" viewBox="0 0 64 64"><path fill="#80d8ff" d="M10 34h30v16H10z"/><path width="18" fill="#01579b" d="M56 18.75a.37.37 0 0 0 0-.14 1 1 0 0 0-.21-.32l-14-14a1 1 0 0 0-.32-.21.37.37 0 0 0-.14 0A.69.69 0 0 0 41 4H13a1 1 0 0 0-1 1v27H9a1 1 0 0 0-1 1v18a1 1 0 0 0 1 1h3v7a1 1 0 0 0 1 1h42a1 1 0 0 0 1-1V19a.69.69 0 0 0 0-.25ZM42 7.41 52.59 18H42ZM10 34h30v16H10Zm4 24v-6h27a1 1 0 0 0 1-1V33a1 1 0 0 0-1-1H14V6h26v13a1 1 0 0 0 1 1h13v38Z"/><path fill="#fff" d="M52.59 18H42V7.41L52.59 18z"/><path fill="#fff" d="M54 20v38H14v-6h27a1 1 0 0 0 1-1V33a1 1 0 0 0-1-1H14V6h26v13a1 1 0 0 0 1 1Z"/><path fill="#01579b" d="M15 46v-8h2.66a2.8 2.8 0 0 1 1.9.58 2.42 2.42 0 0 1 .83 1.92 2.54 2.54 0 0 1-.39 1.32 2.19 2.19 0 0 1-1 .88 2.67 2.67 0 0 1-1.15.23h-1.2V46zm1.69-4.52h.94a1.14 1.14 0 0 0 .81-.28 1 1 0 0 0 .29-.76q0-.92-1.1-.92h-.94zM21.95 46v-8h3a3.18 3.18 0 0 1 2.08.68A4 4 0 0 1 28.5 42a4.48 4.48 0 0 1-.5 2.11 3.52 3.52 0 0 1-1.4 1.45 4.54 4.54 0 0 1-2.22.44zm1.69-1.52h1.08a1.93 1.93 0 0 0 1.09-.29 2.53 2.53 0 0 0 1-2.26 2.4 2.4 0 0 0-.95-2.12 1.87 1.87 0 0 0-1.08-.29h-1.14zm6.6 1.52v-8h4.58v1.52h-2.89v1.63h2.65v1.52h-2.65V46z"/></svg>
+                </button>
+              </div>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <div class="w-1/2 md:flex justify-between pb-5 items-center sm:flex-col border-r-2 rounded border-orange-500" >
+      <div [hidden]="!isDisplay1" class="bg-white text-gray-500 rounded-3xl overflow-hidden">
+        <div class="md:flex">
+          <div class="py-5 px-5 md:px-10">
+            <div class="text-center mb-5">
+              <h1 class="font-bold text-xl text-gray-500">إضافة دواء</h1>
+            </div>
+            <hr />
+            <div>
+              <div class="flex -mx-3 mt-2">
+                <div class="w-full px-3 mb-3">
+                  <label for="" class="text-xs font-semibold px-1 text-gray-400">
+                    اسم الدواء </label>
+                  <div class="flex">
+                    <input type="text"
+                      class="w-full mt-1 pl-10 pr-3 py-2 rounded-lg border-2 border-sky-200 outline-none focus:border-blue-500" />
+                  </div>
+                </div>
+                <div class="flex -mx-2">
+                  <div class="w-full px-3 mb-3">
+                    <label for="" class="text-xs font-semibold px-1 text-gray-400">
+                      الجرعة
+                    </label>
+                    <div class="flex">
+                      <input type="text"
+                        class="w-full mt-1 pl-10 pr-3 py-2 rounded-lg border-2 border-sky-200 outline-none focus:border-blue-500"
+                         />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="flex -mx-3 mt-2">
+                <div class="w-full px-3 mb-3">
+                  <label for="" class="text-xs font-semibold px-1 text-gray-400">
+                    التكرار </label>
+                  <div class="flex">
+                    <input type="text"
+                      class="w-full mt-1 pl-10 pr-3 py-2 rounded-lg border-2 border-sky-200 outline-none focus:border-blue-500" />
+                  </div>
+                </div>
+                <div class="flex -mx-2">
+                  <div class="w-full px-3 mb-3">
+                    <label for="" class="text-xs font-semibold px-1 text-gray-400">
+                      التوجه
+                    </label>
+                    <div class="flex">
+                      <input type="text"
+                        class="w-full mt-1 pl-10 pr-3 py-2 rounded-lg border-2 border-sky-200 outline-none focus:border-blue-500"
+                         />
+                    </div>
+                  </div>
+                  <div class="w-full px-3 mb-3">
+                    <label for="" class="text-xs font-semibold px-1 text-gray-400">
+                      المدة
+                    </label>
+                    <div class="flex">
+                      <input type="text"
+                        class="w-full mt-1 pl-10 pr-3 py-2 rounded-lg border-2 border-sky-200 outline-none focus:border-blue-500"
+                         />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex justify-center">
+                <div class="px-3">
+                  <button
+                    class="bg-emerald-500 hover:bg-emerald-400 focus:bg-emerald-600 text-white rounded-lg px-6 py-3 font-semibold">
+                    <img class="w-4" src="../../../assets/img/add-1.png"  />
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
